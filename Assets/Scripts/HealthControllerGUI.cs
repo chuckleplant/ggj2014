@@ -11,15 +11,30 @@ public class HealthControllerGUI : MonoBehaviour {
 	public Texture2D healthX3;
 	
 	// Use this for initialization
-	void Start () {}
+	void Start () {
+		int screenHeight = Screen.height;
+		int screenWidth = Screen.width;
+		int guiTextureWidth = guiTexture.texture.width;
+		int guiTextureHeight = guiTexture.texture.height;
+
+		float aspectRatio = guiTextureWidth/guiTextureHeight;
+
+		//Debug.Log(screenWidth.ToString() + " " + screenHeight.ToString());
+		//guiTexture.pixelInset = new Rect(-screenWidth/2+40, screenHeight/2-(guiTextureHeight+60), screenWidth/5.0f, (screenWidth/5.0f)/aspectRatio);
+		guiTexture.pixelInset = new Rect(40f, screenHeight-(40f+40f), screenWidth/5.0f, (screenWidth/5.0f)/aspectRatio);
+
+	}
 	
 	// Update is called once per frame
 	void Update () {
-		/*
+
 		if (Input.GetKey("p")) {
 			LIVES--;
 		}
-		*/
+		else if (Input.GetKey("l")) {
+			LIVES++;
+		}
+
 		switch(LIVES) {
 		case 3:
 			guiTexture.texture = healthX3;
