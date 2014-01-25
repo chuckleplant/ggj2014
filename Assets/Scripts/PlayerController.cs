@@ -31,8 +31,8 @@ public class PlayerController : MonoBehaviour {
 	}
 
 	void Update(){
-			transform.LookAt (transform.position + m_Camera.transform.rotation * Vector3.back,
-                 m_Camera.transform.rotation * Vector3.up);
+//			transform.LookAt (transform.position + m_Camera.transform.rotation * Vector3.back,
+//                 m_Camera.transform.rotation * Vector3.up);
 	}
 
 	void FlipVertical()
