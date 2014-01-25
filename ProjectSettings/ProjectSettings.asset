@@ -18,7 +18,7 @@ PlayerSettings:
   defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
-  m_RenderingPath: 1
+  m_RenderingPath: 2
   m_MobileRenderingPath: 1
   m_ActiveColorSpace: 0
   m_MTRendering: 1
@@ -74,8 +74,6 @@ PlayerSettings:
     16:9: 1
     Others: 1
   iPhoneBundleIdentifier: com.Company.ProductName
-  metroEnableIndependentInputSource: 0
-  metroEnableLowLatencyPresentationAPI: 0
   productGUID: 34af1961e124bc2479ebeb9fc0e11489
   iPhoneBundleVersion: 1.0
   AndroidBundleVersionCode: 1
@@ -109,8 +107,15 @@ PlayerSettings:
   AndroidKeystoreName: 
   AndroidKeyaliasName: 
   resolutionDialogBanner: {fileID: 0}
-  m_BuildTargetIcons: []
-  m_BuildTargetBatching: []
+  m_BuildTargetIcons:
+  - m_BuildTarget: 
+    m_Icons:
+    - m_Icon: {fileID: 0}
+      m_Size: 128
+  m_BuildTargetBatching:
+  - m_BuildTarget: Windows Store Apps
+    m_StaticBatching: 1
+    m_DynamicBatching: 1
   webPlayerTemplate: APPLICATION:Default
   m_TemplateCustomTags: {}
   wiiRegion: 1
@@ -151,7 +156,7 @@ PlayerSettings:
   scriptingDefineSymbols: {}
   metroPackageName: ggj2014
   metroPackageLogo: 
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -161,7 +166,7 @@ PlayerSettings:
   metroTileLogo: 
   metroTileWideLogo: 
   metroTileSmallLogo: 
-  metroTileShortName: 
+  metroTileShortName: ggj2014
   metroCommandLineArgsFile: 
   metroTileShowName: 1
   metroTileForegroundText: 1
@@ -169,8 +174,20 @@ PlayerSettings:
   metroSplashScreenImage: 
   metroSplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   metroSplashScreenUseBackgroundColor: 0
-  metroCapabilities: {}
-  metroUnprocessedPlugins: []
+  metroCapabilities:
+    EnterpriseAuthentication: 0
+    InternetClient: 0
+    InternetClientServer: 0
+    Location: 0
+    Microphone: 0
+    MusicLibrary: 0
+    PicturesLibrary: 0
+    PrivateNetworkClientServer: 0
+    Proximity: 0
+    RemovableStorage: 0
+    SharedUserCertificates: 0
+    VideosLibrary: 0
+    WebCam: 0
   metroCompilationOverrides: 1
   blackberryDeviceAddress: 
   blackberryDevicePassword: 
