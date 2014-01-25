@@ -176,11 +176,6 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1068407797}
-    - target: {fileID: 21200000, guid: b3f67e453725d4b80afafa644cb4d73c, type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300008, guid: b43f6ecc6e9074f91be5f5cd87e65c40,
-        type: 3}
     - target: {fileID: 400000, guid: b3f67e453725d4b80afafa644cb4d73c, type: 2}
       propertyPath: m_LocalScale.x
       value: 1
@@ -201,6 +196,11 @@ Prefab:
       propertyPath: m_Constraints
       value: 116
       objectReference: {fileID: 0}
+    - target: {fileID: 21200000, guid: b3f67e453725d4b80afafa644cb4d73c, type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b43f6ecc6e9074f91be5f5cd87e65c40,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b3f67e453725d4b80afafa644cb4d73c, type: 2}
   m_RootGameObject: {fileID: 1775676219}
@@ -576,7 +576,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortingLayerID: 0
-  m_Sprite: {fileID: 21300008, guid: b43f6ecc6e9074f91be5f5cd87e65c40, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b43f6ecc6e9074f91be5f5cd87e65c40, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1775676225
 Transform:
