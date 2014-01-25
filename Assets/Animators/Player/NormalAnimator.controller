@@ -5,7 +5,7 @@ AnimatorController:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: Player
+  m_Name: NormalAnimator
   serializedVersion: 2
   m_AnimatorParameters:
   - m_Name: horizontalSpeed
@@ -415,7 +415,6 @@ StateMachine:
   m_Name: Base Layer
   m_DefaultState: {fileID: 110236638}
   m_States:
-  - {fileID: 110226242}
   - {fileID: 110221462}
   - {fileID: 110227037}
   - {fileID: 110206160}
@@ -425,27 +424,14 @@ StateMachine:
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
+      first: {fileID: 0}
+      second: []
+    data:
       first: {fileID: 110236638}
       second:
       - {fileID: 110100000}
       - {fileID: 110186369}
       - {fileID: 110161233}
-    data:
-      first: {fileID: 110200000}
-      second:
-      - {fileID: 110145743}
-      - {fileID: 110122612}
-      - {fileID: 110170155}
-    data:
-      first: {fileID: 110206160}
-      second:
-      - {fileID: 110102394}
-      - {fileID: 110147081}
-    data:
-      first: {fileID: 110227037}
-      second:
-      - {fileID: 110121846}
-      - {fileID: 110188723}
     data:
       first: {fileID: 0}
       second: []
@@ -457,8 +443,21 @@ StateMachine:
       - {fileID: 110100955}
       - {fileID: 110127637}
     data:
-      first: {fileID: 110226242}
-      second: []
+      first: {fileID: 110227037}
+      second:
+      - {fileID: 110121846}
+      - {fileID: 110188723}
+    data:
+      first: {fileID: 110206160}
+      second:
+      - {fileID: 110102394}
+      - {fileID: 110147081}
+    data:
+      first: {fileID: 110200000}
+      second:
+      - {fileID: 110145743}
+      - {fileID: 110122612}
+      - {fileID: 110170155}
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: -216, y: 0, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}

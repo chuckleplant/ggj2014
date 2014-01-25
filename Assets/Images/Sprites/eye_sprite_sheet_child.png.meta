@@ -54,9 +54,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 299
-        y: 733
+        y: 1039
         width: 118
-        height: 611
+        height: 305
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_2
@@ -80,13 +80,22 @@ TextureImporter:
     - name: eye_sprite_sheet_child_4
       rect:
         serializedVersion: 2
-        x: 1
-        y: 112
-        width: 135
-        height: 615
+        x: 436
+        y: 703
+        width: 119
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_5
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 391
+        width: 135
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: eye_sprite_sheet_child_6
       rect:
         serializedVersion: 2
         x: 298
@@ -95,7 +104,16 @@ TextureImporter:
         height: 297
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: eye_sprite_sheet_child_6
+    - name: eye_sprite_sheet_child_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 35
+        width: 133
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: eye_sprite_sheet_child_8
       rect:
         serializedVersion: 2
         x: 298
@@ -104,7 +122,7 @@ TextureImporter:
         height: 296
       alignment: 0
       pivot: {x: 0, y: 0}
-    - name: eye_sprite_sheet_child_7
+    - name: eye_sprite_sheet_child_9
       rect:
         serializedVersion: 2
         x: 453
