@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour {
 
 	public float 	maxSpeed = 10f;
 	bool			facingRight = true;
+	public Camera m_Camera;
 
 	Animator anim;
 	Sprite spriteComponent;
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour {
 
 		rigidbody.velocity = new Vector3(horizontalMove, 0f, verticalMove) * maxSpeed;
 
-		anim.SetFloat("Speed", rigidbody.velocity.magnitude);
+		//anim.SetFloat("Speed", rigidbody.velocity.magnitude);
 
 		if (verticalMove > 0 && !facingRight)
 			FlipVertical();
@@ -29,6 +30,10 @@ public class PlayerController : MonoBehaviour {
 			FlipVertical();
 	}
 
+	void Update(){
+			transform.LookAt (transform.position + m_Camera.transform.rotation * Vector3.back,
+                 m_Camera.transform.rotation * Vector3.up);
+	}
 
 	void FlipVertical()
 	{
