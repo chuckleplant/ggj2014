@@ -44,73 +44,91 @@ TextureImporter:
     - name: sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2206
+        x: 3
+        y: 1038
         width: 140
-        height: 307
+        height: 308
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1896
-        width: 140
-        height: 307
+        x: 300
+        y: 1039
+        width: 116
+        height: 304
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 2
-        y: 1280
-        width: 133
-        height: 614
+        x: 419
+        y: 1058
+        width: 151
+        height: 285
       alignment: 7
-      pivot: {x: .5, y: 0}
+      pivot: {x: 0, y: 0}
     - name: sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 135
-        y: 1321
-        width: 123
-        height: 266
+        x: 1
+        y: 729
+        width: 141
+        height: 306
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2
-        y: 975
+        x: 300
+        y: 734
         width: 116
-        height: 305
+        height: 304
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 120
-        y: 995
-        width: 150
-        height: 285
+        x: 3
+        y: 420
+        width: 133
+        height: 306
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 2
-        y: 373
+        x: 299
+        y: 429
         width: 116
-        height: 600
+        height: 296
       alignment: 7
       pivot: {x: 0, y: 0}
     - name: sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 2
-        y: 79
+        x: 1
+        y: 113
+        width: 132
+        height: 305
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 154
+        width: 122
+        height: 263
+      alignment: 7
+      pivot: {x: 0, y: 0}
+    - name: sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 133
         width: 121
-        height: 294
+        height: 295
       alignment: 7
       pivot: {x: 0, y: 0}
   spritePackingTag: 
