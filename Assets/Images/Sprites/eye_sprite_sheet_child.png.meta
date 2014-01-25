@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b43f6ecc6e9074f91be5f5cd87e65c40
+guid: fc593aa5c2c2d4a408cd384fa5dad09b
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -41,95 +41,77 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: sprite_sheet_0
+    - name: eye_sprite_sheet_child_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 1038
-        width: 140
+        x: 2
+        y: 1037
+        width: 142
+        height: 309
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: eye_sprite_sheet_child_1
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 733
+        width: 118
+        height: 611
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: eye_sprite_sheet_child_2
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1057
+        width: 153
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+    - name: eye_sprite_sheet_child_3
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 728
+        width: 142
         height: 308
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
-    - name: sprite_sheet_1
-      rect:
-        serializedVersion: 2
-        x: 300
-        y: 1039
-        width: 116
-        height: 304
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: sprite_sheet_2
-      rect:
-        serializedVersion: 2
-        x: 419
-        y: 1058
-        width: 151
-        height: 285
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: sprite_sheet_3
+    - name: eye_sprite_sheet_child_4
       rect:
         serializedVersion: 2
         x: 1
-        y: 729
-        width: 141
-        height: 306
-      alignment: 7
+        y: 112
+        width: 135
+        height: 615
+      alignment: 0
       pivot: {x: 0, y: 0}
-    - name: sprite_sheet_4
+    - name: eye_sprite_sheet_child_5
       rect:
         serializedVersion: 2
-        x: 300
-        y: 734
-        width: 116
-        height: 304
-      alignment: 7
+        x: 298
+        y: 428
+        width: 117
+        height: 297
+      alignment: 0
       pivot: {x: 0, y: 0}
-    - name: sprite_sheet_5
+    - name: eye_sprite_sheet_child_6
       rect:
         serializedVersion: 2
-        x: 3
-        y: 420
-        width: 133
-        height: 306
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: sprite_sheet_6
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 429
-        width: 116
+        x: 298
+        y: 132
+        width: 123
         height: 296
-      alignment: 7
+      alignment: 0
       pivot: {x: 0, y: 0}
-    - name: sprite_sheet_7
+    - name: eye_sprite_sheet_child_7
       rect:
         serializedVersion: 2
-        x: 1
-        y: 113
-        width: 132
-        height: 305
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: sprite_sheet_8
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 154
-        width: 122
-        height: 263
-      alignment: 7
-      pivot: {x: 0, y: 0}
-    - name: sprite_sheet_9
-      rect:
-        serializedVersion: 2
-        x: 299
-        y: 133
-        width: 121
-        height: 295
-      alignment: 7
+        x: 453
+        y: 161
+        width: 127
+        height: 265
+      alignment: 0
       pivot: {x: 0, y: 0}
   spritePackingTag: 
   userData: 
