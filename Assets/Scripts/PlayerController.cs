@@ -7,8 +7,6 @@ public class PlayerController : MonoBehaviour {
 	public bool facingRight = true;
 	public bool facingUp = false;
 
-	public Camera m_Camera;
-
 	public Animator anim;
 
 	public float horizontalMove;
@@ -23,12 +21,7 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
-		horizontalMove 	= Input.GetAxis("Horizontal");
-		verticalMove 		= Input.GetAxis("Vertical");
-
 		rigidbody.velocity = new Vector3(horizontalMove, 0f, verticalMove) * maxSpeed;
-
-
 
 		if (horizontalMove > 0 && !facingRight) {
 			FlipHorizontal();
@@ -46,8 +39,6 @@ public class PlayerController : MonoBehaviour {
 		anim.SetFloat ("horizontalSpeed", Mathf.Abs(horizontalMove));
 		anim.SetFloat ("verticalSpeed", Mathf.Abs(verticalMove));
 		anim.SetBool ("facingUp", facingUp);
-
-
 	}
 
 
