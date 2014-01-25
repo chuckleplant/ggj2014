@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f867997f6873606459c86585696de8a7
+guid: 5a9aad596827d174695c103223fe927a
 TextureImporter:
   serializedVersion: 2
   mipmaps:
@@ -20,14 +20,14 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-  textureFormat: -3
+  textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -1
-    wrapMode: 1
-  nPOTScale: 1
+    wrapMode: -1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
   spriteMode: 0
@@ -37,18 +37,9 @@ TextureImporter:
   spritePivot: {x: .5, y: .5}
   spritePixelsToUnits: 100
   alphaIsTransparency: 0
-  textureType: 0
+  textureType: 5
   buildTargetSettings: []
   spriteSheet:
-    sprites:
-    - name: eye_child_color_0
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 46
-        width: 225
-        height: 301
-      alignment: 0
-      pivot: {x: 0, y: 0}
+    sprites: []
   spritePackingTag: 
   userData: 
