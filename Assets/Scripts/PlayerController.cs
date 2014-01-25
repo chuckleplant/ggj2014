@@ -7,12 +7,13 @@ public class PlayerController : MonoBehaviour {
 	bool			facingRight = true;
 	public Camera m_Camera;
 
-	Animator anim;
-	Sprite spriteComponent;
+	public Animator anim;
 
 	// Use this for initialization
 	void Start () {
-		anim = GetComponent<Animator>();
+		//anim = GameObject.Find ("Idle").animation;
+		//anim = GetComponent<Animator>();
+
 	}
 	
 	// Update is called once per frame
