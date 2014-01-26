@@ -1,18 +1,10 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 3c49925a1a45bc647a57011a49be9102
-=======
-guid: fc593aa5c2c2d4a408cd384fa5dad09b
->>>>>>> 34b7e7ef679de5526ddc2dca311b49563c1898eb
 TextureImporter:
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
-<<<<<<< HEAD
-    enableMipMap: 1
-=======
     enableMipMap: 0
->>>>>>> 34b7e7ef679de5526ddc2dca311b49563c1898eb
     linearTexture: 0
     correctGamma: 0
     fadeOut: 0
@@ -28,19 +20,6 @@ TextureImporter:
   grayScaleToAlpha: 0
   generateCubemap: 0
   seamlessCubemap: 0
-<<<<<<< HEAD
-  textureFormat: -1
-  maxTextureSize: 1024
-  textureSettings:
-    filterMode: -1
-    aniso: -1
-    mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
-  lightmap: 0
-  compressionQuality: 50
-  spriteMode: 0
-=======
   textureFormat: -3
   maxTextureSize: 1024
   textureSettings:
@@ -52,19 +31,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
->>>>>>> 34b7e7ef679de5526ddc2dca311b49563c1898eb
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: .5, y: .5}
   spritePixelsToUnits: 100
-<<<<<<< HEAD
-  alphaIsTransparency: 0
-  textureType: -1
-  buildTargetSettings: []
-  spriteSheet:
-    sprites: []
-=======
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
@@ -77,7 +48,7 @@ TextureImporter:
         y: 1037
         width: 142
         height: 309
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_1
       rect:
@@ -86,7 +57,7 @@ TextureImporter:
         y: 1039
         width: 118
         height: 305
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_2
       rect:
@@ -95,7 +66,7 @@ TextureImporter:
         y: 1057
         width: 153
         height: 287
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_3
       rect:
@@ -104,8 +75,8 @@ TextureImporter:
         y: 728
         width: 142
         height: 308
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 7
+      pivot: {x: .5, y: 0}
     - name: eye_sprite_sheet_child_4
       rect:
         serializedVersion: 2
@@ -113,7 +84,7 @@ TextureImporter:
         y: 703
         width: 119
         height: 304
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_5
       rect:
@@ -122,7 +93,7 @@ TextureImporter:
         y: 391
         width: 135
         height: 309
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_6
       rect:
@@ -131,7 +102,7 @@ TextureImporter:
         y: 428
         width: 117
         height: 297
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_7
       rect:
@@ -140,7 +111,7 @@ TextureImporter:
         y: 35
         width: 133
         height: 308
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_8
       rect:
@@ -149,7 +120,7 @@ TextureImporter:
         y: 132
         width: 123
         height: 296
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
     - name: eye_sprite_sheet_child_9
       rect:
@@ -158,8 +129,7 @@ TextureImporter:
         y: 161
         width: 127
         height: 265
-      alignment: 0
+      alignment: 7
       pivot: {x: 0, y: 0}
->>>>>>> 34b7e7ef679de5526ddc2dca311b49563c1898eb
   spritePackingTag: 
   userData: 

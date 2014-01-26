@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11400002}
   - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
+  - 114: {fileID: 11400006}
   m_Layer: 0
   m_Name: PlayerNormal
   m_TagString: PlayerNormal
@@ -115,6 +116,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 11400000}
+--- !u!114 &11400006
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 092bbc733281144c2a2fb5bda2259a77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalPlayerAnimatorController: {fileID: 9100000, guid: 9405c335ae2362846a8f760508bd4d09,
+    type: 2}
+  kidPlayerAnimatorController: {fileID: 9100000, guid: 921587cff3d78426f877cafc8c2288c4,
+    type: 2}
+  normalPlayerSprite: {fileID: 21300000, guid: b43f6ecc6e9074f91be5f5cd87e65c40, type: 3}
+  kidPlayerSprite: {fileID: 21300000, guid: 3c49925a1a45bc647a57011a49be9102, type: 3}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1

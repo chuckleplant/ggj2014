@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthControllerGUI : MonoBehaviour {
 	
-	public int LIVES = 3;
+	public static int LIVES = 3;
 	// When you want to substract a life you are going to do the following:
 	// HealthController.LIVES -= 1;
 	public Texture2D healthX1;
@@ -50,7 +50,4 @@ public class HealthControllerGUI : MonoBehaviour {
 			break;
 		}
 	}
-
-
-
 }
