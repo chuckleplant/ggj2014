@@ -26,4 +26,10 @@ public class TreeController : MonoBehaviour {
 			break;
 		}
 	}
+
+	void OnCollisionEnter(Collision collision) {
+		if (EyeManager.eyeState == EyeManager.E_EyeEquiped.Kid) {
+			--HealthControllerGUI.LIVES;
+		}
+	}
 }

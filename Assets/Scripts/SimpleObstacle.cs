@@ -9,6 +9,7 @@ public class SimpleObstacle : MonoBehaviour {
 	private SpriteRenderer currentObstacleRenderer;
 	// Use this for initialization
 	void Start () {
+		currentObstacleRenderer = gameObject.GetComponent<SpriteRenderer>();
 		currentEyeState = EyeManager.E_EyeEquiped.Normal;//EyeManager.E_EyeEquiped.Blind;
 		currentObstacleRenderer.sprite = normalObstacle;
 	}

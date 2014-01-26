@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthControllerGUI : MonoBehaviour {
 	
-	public static int LIVES = 3;
+	public static int LIVES;
 	// When you want to substract a life you are going to do the following:
 	// HealthController.LIVES -= 1;
 	public Texture2D healthX1;
@@ -12,6 +12,7 @@ public class HealthControllerGUI : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		LIVES = 3;
 		int screenHeight = Screen.height;
 		int screenWidth = Screen.width;
 		int guiTextureWidth = guiTexture.texture.width;
@@ -49,5 +50,8 @@ public class HealthControllerGUI : MonoBehaviour {
 			
 			break;
 		}
+
+		if (LIVES == 0)
+						Application.LoadLevel (Application.loadedLevel);
 	}
 }
