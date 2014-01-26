@@ -52,6 +52,6 @@ public class HealthControllerGUI : MonoBehaviour {
 		}
 
 		if (LIVES == 0)
-						Application.LoadLevel (Application.loadedLevel);
+			Application.LoadLevel (Application.loadedLevel);
 	}
 }
