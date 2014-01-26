@@ -15,8 +15,8 @@ public class EyeController2 : MonoBehaviour {
 		
 		float aspectRatio = guiTextureWidth/guiTextureHeight;
 		
-		Debug.Log(screenWidth.ToString() + " " + screenHeight.ToString());
-		guiTexture.pixelInset = new Rect(screenWidth-300f, screenHeight-(40f+60f), 128f, 128f);
+		//Debug.Log(screenWidth.ToString() + " " + screenHeight.ToString());
+		//guiTexture.pixelInset = new Rect(screenWidth-300f, screenHeight-(40f+60f), 128f, 128f);
 	}
 	
 	// Update is called once per frame

@@ -3,7 +3,7 @@ using System.Collections;
 
 public class HealthControllerGUI : MonoBehaviour {
 	
-	public static int LIVES = 3;
+	public int LIVES = 3;
 	// When you want to substract a life you are going to do the following:
 	// HealthController.LIVES -= 1;
 	public Texture2D healthX1;
@@ -21,17 +21,17 @@ public class HealthControllerGUI : MonoBehaviour {
 
 		//Debug.Log(screenWidth.ToString() + " " + screenHeight.ToString());
 		//guiTexture.pixelInset = new Rect(-screenWidth/2+40, screenHeight/2-(guiTextureHeight+60), screenWidth/5.0f, (screenWidth/5.0f)/aspectRatio);
-		guiTexture.pixelInset = new Rect(40f, screenHeight-(40f+40f), screenWidth/5.0f, (screenWidth/5.0f)/aspectRatio);
+		//guiTexture.pixelInset = new Rect(40f, screenHeight-(40f+40f), screenWidth/5.0f, (screenWidth/5.0f)/aspectRatio);
 
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKey("p")) {
+		if (Input.GetKeyDown("p")) {
 			LIVES--;
 		}
-		else if (Input.GetKey("l")) {
+		else if (Input.GetKeyDown("l")) {
 			LIVES++;
 		}
 
@@ -50,4 +50,7 @@ public class HealthControllerGUI : MonoBehaviour {
 			break;
 		}
 	}
+
+
+
 }
