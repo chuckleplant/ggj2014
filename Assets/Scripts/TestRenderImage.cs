@@ -27,7 +27,7 @@ public class TestRenderImage : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		grayScaleAmount = 0.5f;
+		grayScaleAmount = 0.25f;
 		if(!SystemInfo.supportsImageEffects)
 		{
 			enabled = false;
@@ -58,7 +58,7 @@ public class TestRenderImage : MonoBehaviour {
 		float increment = 0.85f;
 		if (EyeManager.eyeState == EyeManager.E_EyeEquiped.Normal) {
 			grayScaleAmount += increment * Time.deltaTime;
-			if (grayScaleAmount > 0.85f) grayScaleAmount = 0.85f;
+			if (grayScaleAmount > 0.5f) grayScaleAmount = 0.5f;
 		}
 		else {
 			grayScaleAmount -= increment * Time.deltaTime;
