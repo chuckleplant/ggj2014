@@ -2,12 +2,12 @@
 using System.Collections;
 
 public class followPlayer : MonoBehaviour {
-	public GameObject player;
+	private GameObject player;
 	public float lockedY;
 	public float zoffset;
 	// Use this for initialization
 	void Start () {
-	
+		player = GameObject.FindWithTag ("PlayerNormal");
 	}
 	
 	// Update is called once per frame
