@@ -92,6 +92,7 @@ MonoBehaviour:
   anim: {fileID: 9500000}
   horizontalMove: 0
   verticalMove: 0
+  myRigid: {fileID: 5400000}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

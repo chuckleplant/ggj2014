@@ -15,7 +15,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &400000
 Transform:
@@ -24,7 +24,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .100000001, y: .899999976, z: 0}
+  m_LocalPosition: {x: 0, y: .899999976, z: 0}
   m_LocalScale: {x: 0, y: 0, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,7 +39,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 67206b73cc4ddcd4480bc514b6bb5996, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LIVES: 3
   healthX1: {fileID: 2800000, guid: 1e8a5db76312940bf932825b3c70a33f, type: 3}
   healthX2: {fileID: 2800000, guid: a0675938383604e7792b7b21e0ddc658, type: 3}
   healthX3: {fileID: 2800000, guid: bc8009e25009f4c94b7dad7322b463e4, type: 3}
