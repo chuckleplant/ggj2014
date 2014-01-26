@@ -10,11 +10,17 @@ public class EyeManager : MonoBehaviour {
 		Invalid
 	};
 
-	public static E_EyeEquiped eyeState;
+	public static E_EyeEquiped 	eyeState;
+
+	public Transform PlayerNormalPrefab;
+	public Transform PlayerKidPrefab;
+
+	public Transform SpawnPoint;
 
 	// Use this for initialization
 	void Start () {
 		eyeState = E_EyeEquiped.Normal;
+		Instantiate(PlayerNormalPrefab, SpawnPoint.transform.position, Quaternion.identity);
 	}
 	
 	// Update is called once per frame
