@@ -26,7 +26,6 @@ public class EnemyAI : MonoBehaviour {
 	void Awake() 
 	{
 		nav = this.GetComponent<NavMeshAgent>();
-		player = GameObject.FindGameObjectWithTag("Player").transform;
 		state = E_EnemyState.Patroling;
 	}
 		
@@ -36,6 +35,16 @@ public class EnemyAI : MonoBehaviour {
 
 	void Update()
 	{
+		if (player == null) player = GameObject.FindGameObjectWithTag("PlayerNormal").transform;
+
+		if (EyeManager.eyeState == EyeManager.E_EyeEquiped.Normal) {
+			gameObject.renderer.material.color = Color.red;
+		}
+		else {
+			gameObject.renderer.material.color = Color.green;
+		}
+
+
 		if (PlayerDetected() && EyeManager.eyeState != EyeManager.E_EyeEquiped.Kid) {
 			// Si se ha detectado al player, perseguirlo
 			Chasing();
@@ -82,6 +91,10 @@ public class EnemyAI : MonoBehaviour {
 
 			// Modificar la velocidad a velocidad de patrulla
 			nav.speed = patrolSpeed;
+
+			Debug.Log(nav.remainingDistance < nav.stoppingDistance);
+			Debug.Log(nav.remainingDistance);
+			Debug.Log(nav.stoppingDistance);
 
 			// Si hemos llegado al punto
 			if (nav.remainingDistance < nav.stoppingDistance) {

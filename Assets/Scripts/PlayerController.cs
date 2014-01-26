@@ -12,11 +12,12 @@ public class PlayerController : MonoBehaviour {
 	public float horizontalMove;
 	public float verticalMove;
 
+	public Rigidbody myRigid;
+
 	// Use this for initialization
 	void Start () {
 		//anim = GameObject.Find ("Idle").animation;
 		anim = GetComponent<Animator>();
-
 	}
 	
 	// Update is called once per frame
@@ -50,5 +51,14 @@ public class PlayerController : MonoBehaviour {
 		theScale.x				*= -1;
 		transform.localScale 	= theScale;
 
+	}
+
+	void OnCollisionEnter(Collision collision) {
+		if(EyeManager.eyeState == EyeManager.E_EyeEquiped.Normal && collision.transform.tag == "Enemy"){
+			HealthControllerGUI.LIVES -= 1;
+			float magnitude = 5000.0f;
+			Vector3 force = collision.rigidbody.velocity * magnitude;
+			myRigid.AddForce(force);
+		}		
 	}
 }

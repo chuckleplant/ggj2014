@@ -9,7 +9,7 @@ public class HealthControllerGUI : MonoBehaviour {
 	public Texture2D healthX1;
 	public Texture2D healthX2;
 	public Texture2D healthX3;
-	
+
 	// Use this for initialization
 	void Start () {
 		int screenHeight = Screen.height;
