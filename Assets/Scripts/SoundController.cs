@@ -3,8 +3,8 @@ using System.Collections;
 
 public class SoundController : MonoBehaviour {
 
-	public float fadeInVelocity = 0.1f;
-	public float fadeOutVelocity = 0.1f;
+	public float fadeInVelocity = 0.3f;
+	public float fadeOutVelocity = 0.3f;
 
 	private enum E_SoundsState {
 		Sounding,
@@ -15,51 +15,55 @@ public class SoundController : MonoBehaviour {
 	private E_SoundsState soundsState;
 
 	// Audios
+	public AudioSource adultEyes;
 	public AudioSource childEyes;
+	private AudioSource actualSound;
+	private AudioSource oldSound;
 
 	void Awake()
 	{
+		//lastEyeEquiped = EyeManager.E_EyeEquiped.Normal;
+		//soundsState = E_SoundsState.Sounding;
 		lastEyeEquiped = EyeManager.E_EyeEquiped.Normal;
-		soundsState = E_SoundsState.Sounding;
 
-		// TODO: Hacer que este sonando el sonido de ojo normal
+		// Starting sounds
+		oldSound = childEyes;
+		actualSound = adultEyes;
+		adultEyes.Play();
+		adultEyes.volume = 0f;
 	}
 
 	void FixedUpdate()
 	{
 		if (lastEyeEquiped != EyeManager.eyeState) {
-			soundsState = E_SoundsState.Changing;
-		}
-
-		// IMPLEMENTAR THIS SHIT
-
-		// SI ACABAMOS DE CAMBIAR
-		// Cambiar el sonido antiguo y actual
-
-		// SI ESTAMOS CAMBIANDO
-		// Fade Out del sonido antiguo
-		// Fade In del sonido nuevo
-
-		// SI NO ESTAMOS CAMBIANDO
-		// Seguir sonando lo mismo a toda mecha, no fades
-
-
-
-
-
-
-			/*FadeOutAllSounds();
-
-			lastEyeEquiped = EyeManager.eyeState;
-
-			switch (lastEyeEquiped) {
+			Debug.Log ("Cambiamos de ojo");
+			// Acabamos de cambiar
+			switch (EyeManager.eyeState) {	// Switch new sound
+			case EyeManager.E_EyeEquiped.Normal:
+				adultEyes.Play();
+				adultEyes.volume = 0f;
+				oldSound = actualSound;
+				actualSound = adultEyes;
+				break;
 			case EyeManager.E_EyeEquiped.Kid:
-				FadeInSound(childEyes);
 				childEyes.Play();
+				childEyes.volume = 0f;
+				oldSound = actualSound;
+				actualSound = childEyes;
 				break;
 			default: break;
+			}
 
-		}*/
+			lastEyeEquiped = EyeManager.eyeState;
+			//soundsState = E_SoundsState.Changing;
+		}
+
+		// Si estamos cambiando, FadeIn y FadeOut
+		//if (soundsState == E_SoundsState.Changing) {
+			FadeInSound(actualSound);
+			FadeOutSound(oldSound);
+		//}
+
 	}
 
 	void FadeInSound(AudioSource sound)
@@ -74,6 +78,7 @@ public class SoundController : MonoBehaviour {
 		if (sound.volume > 0f) {
 			sound.volume -= fadeOutVelocity*Time.deltaTime;
 		}
+		if (sound.volume <= 0f) sound.Pause();
 	}
 
 
